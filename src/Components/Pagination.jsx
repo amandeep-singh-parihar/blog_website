@@ -10,7 +10,7 @@ function Pagination() {
         <div className="flex gap-3">
           {page > 1 && (
             <button
-              className="px-2 py-1 border-2 rounded-md text-xs font-bold"
+              className="px-2 py-1 border-2 rounded-md text-xs font-bold hover:bg-gray-100"
               onClick={() => handlePageChange(page - 1)}
             >
               Previous
@@ -18,7 +18,7 @@ function Pagination() {
           )}
           {page < totalPages && (
             <button
-              className="px-3 py-1 border-2 rounded-md text-xs font-bold"
+              className="px-3 py-1 border-2 rounded-md text-xs font-bold hover:bg-gray-100"
               onClick={() => handlePageChange(page + 1)}
             >
               Next
