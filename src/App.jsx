@@ -19,10 +19,8 @@ function App() {
   const location = useLocation();
 
   useEffect(()=>{
-    // fetchBlogPosts();
     const page = searchParams.get("page") ?? 1;
     if(location.pathname.includes("tags")){
-      //iska matlab tag wala page show krna hai
       const tag = location.pathname.split("/").at(-1).replace("-"," ");
       fetchBlogPosts(Number(page),tag);
     }
